@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Hub</title>
+    <style>
+        /* CSS Styling */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #20232a;
+            color: #61dafb;
+        }
+
+        header {
+            background-color: #282c34;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        nav button {
+            background-color: #61dafb;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        nav button:hover {
+            background-color: #21a1f1;
+        }
+
+        main {
+            margin: 20px;
+        }
+
+        footer {
+            background-color: #282c34;
+            padding: 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Gaming Hub!</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><button onclick="loadGame('ticTacToe')">Tic-Tac-Toe</button></li>
+            <li><button onclick="loadGame('memoryGame')">Memory Game</button></li>
+            <li><button onclick="loadGame('snakeGame')">Snake Game</button></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="gameContainer">
+            <p>Select a game to play!</p>
+        </div>
+    </main>
+    <footer>
+        <p>All rights Reserved</p>
+    </footer>
+    <script>
+        // JavaScript Functionality
+        function loadGame(gameName) {
+            const gameContainer = document.getElementById('gameContainer');
+
+            if (gameName === 'ticTacToe') {
+                gameContainer.innerHTML = `
+                    <h2>Tic-Tac-Toe</h2>
+                    <p>Coming Soon</p>
+                `;
+            } else if (gameName === 'memoryGame') {
+                gameContainer.innerHTML = `
+                    <h2>Memory Game</h2>
+                    <p>Game coming soon...</p>
+                `;
+            } else if (gameName === 'snakeGame') {
+                gameContainer.innerHTML = `
+                    <h2>Snake Game</h2>
+                    <p>Game coming soon...</p>
+                `;
+            }
+        }
+    </script>
+</body>
+</html>
