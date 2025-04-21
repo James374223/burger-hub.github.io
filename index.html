@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Hut - Menu and Booking</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <h1>Burger Hut</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#booking">Pre-book</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        
+        <!-- Classic Burger -->
+        <div class="menu-item">
+            <img src="https://thespiceway.com/cdn/shop/files/Signature_Savory_Classic_Burger.jpg?v=1712161801" alt="Classic Burger" class="burger-img">
+            <h3>Classic Burger</h3>
+            <p>A delicious beef burger with lettuce, tomato, and cheese.</p>
+            <p class="price">₹899</p>
+        </div>
+        
+        <!-- Cheese Burger -->
+        <div class="menu-item">
+            <img src="https://www.kitchensanctuary.com/wp-content/uploads/2021/05/Double-Cheeseburger-square-FS-42.jpg" alt="Cheese Burger" class="burger-img">
+            <h3>Cheese Burger</h3>
+            <p>A juicy burger with extra cheese and pickles.</p>
+            <p class="price">₹999</p>
+        </div>
+
+        <!-- Chicken Burger -->
+        <div class="menu-item">
+            <img src="https://t3.ftcdn.net/jpg/02/19/46/78/360_F_219467809_GYKTUDodRRk1o64ZltOURhzfvEYLk6zq.jpg" alt="Chicken Burger" class="burger-img">
+            <h3>Chicken Burger</h3>
+            <p>Grilled chicken with fresh veggies and mayo.</p>
+            <p class="price">₹799</p>
+        </div>
+
+        <!-- Veggie Burger -->
+        <div class="menu-item">
+            <img src="https://www.noracooks.com/wp-content/uploads/2023/04/veggie-burgers-1-2.jpg" alt="Veggie Burger" class="burger-img">
+            <h3>Veggie Burger</h3>
+            <p>Plant-based patty with lettuce, tomato, and sauce.</p>
+            <p class="price">₹699</p>
+        </div>
+
+    </section>
+
+    <section id="booking">
+        <h2>Pre-book a Table</h2>
+        <form id="booking-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+        <p id="confirmation"></p>
+    </section>
+
+    <script src="work.js"></script>
+</body>
+</html>
